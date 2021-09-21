@@ -1,4 +1,4 @@
-Simple Java project with Maven and jib that prints Hello World!
+Simple Java project with Maven and jib that prints Hello World! and build and push docker image to dockerhub
 
 How to compile and run:
 
