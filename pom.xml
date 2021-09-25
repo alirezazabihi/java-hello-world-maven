@@ -8,7 +8,7 @@
 		<maven.compiler.source>1.7</maven.compiler.source>
 		<maven.compiler.target>1.7</maven.compiler.target>
 		<java.version>16</java.version>
-		<registry>8adb-5-201-132-230.ngrok.io:443</registry>
+		<registry>docker.io/azabihi/mynewjavaapp</registry>
     	</properties>
 		<build>
 			<plugins>
