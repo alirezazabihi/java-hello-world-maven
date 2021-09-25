@@ -8,7 +8,7 @@
 		<maven.compiler.source>1.7</maven.compiler.source>
 		<maven.compiler.target>1.7</maven.compiler.target>
 		<java.version>16</java.version>
-		<registry>registry.hub.docker.com</registry>
+		<registry>8adb-5-201-132-230.ngrok.io:443</registry>
     	</properties>
 		<build>
 			<plugins>
@@ -22,7 +22,7 @@
 							 <image>adoptopenjdk:16-jre</image>
 						 </from>
 						 <to>
-							 <image>${registry}/azabihi/java-hello-world</image>
+							 <image>${registry}/azabihi/java-hello-world:v1</image>
 						 </to>
 					 </configuration>
 						  
