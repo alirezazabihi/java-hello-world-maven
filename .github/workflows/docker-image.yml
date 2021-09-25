@@ -30,3 +30,14 @@ jobs:
         
     - name: Build with Maven
       run: mvn compile jib:build -Djib.to.auth.username=azabihi -Djib.to.auth.password='Alir3z@Zabih1'
+      
+    - name: pull docker image on server
+      uses: JimCronqvist/action-ssh@master
+      with:
+        hosts: 'root@94.130.25.16:23459'
+        privateKey: ${{ secrets.PRIVATE_KEY }}
+        debug: false
+        command: |
+          docker image pull azabihi/java-hello-worldss:latest
+          docker run -d --name java-hello azabihi/java-hello-worldss:latest
+          
