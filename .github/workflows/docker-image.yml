@@ -38,6 +38,6 @@ jobs:
         privateKey: ${{ secrets.PRIVATE_KEY }}
         debug: false
         command: |
-          docker image pull azabihi/java-hello-worldss:latest
-          docker run -d --name java-hello azabihi/java-hello-worldss:latest
+          docker image pull azabihi/java-hello-worldss:v2
+          docker run -d --name java-hello azabihi/java-hello-worldss:v2
           
