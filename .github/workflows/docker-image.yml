@@ -32,12 +32,11 @@ jobs:
       run: mvn compile jib:build -Djib.to.auth.username=azabihi -Djib.to.auth.password='Alir3z@Zabih1'
       
     - name: pull docker image on server
-      uses: JimCronqvist/action-ssh@master
+      uses: fifsky/ssh-action@master
       with:
-        hosts: 'root@94.130.25.16:23459'
-        privateKey: ${{ secrets.PRIVATE_KEY }}
-        debug: true
+        hosts: 94.130.25.16:23459
+        port: 23459
+        pass: ${{ secrets.PRIVATE_PASS }}
         command: |
           docker image pull azabihi/java-hello-worldss:v2
           docker run -d --name java-hello azabihi/java-hello-worldss:v2
-          
