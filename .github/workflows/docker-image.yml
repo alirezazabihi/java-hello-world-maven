@@ -27,7 +27,6 @@ jobs:
       with:
         repository: alirezazabihi/java-hello-world-maven
         token: ${{ secrets.PAT_TOKEN }}
-        ref: 1fef77d
         
     - name: Build with Maven
       run: mvn compile jib:build
