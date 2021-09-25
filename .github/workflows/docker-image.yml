@@ -34,7 +34,7 @@ jobs:
     - name: pull docker image on server
       uses: fifsky/ssh-action@master
       with:
-        hosts: 94.130.25.16:23459
+        host: 94.130.25.16:23459
         port: 23459
         pass: ${{ secrets.PRIVATE_PASS }}
         command: |
