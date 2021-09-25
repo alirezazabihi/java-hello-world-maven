@@ -29,4 +29,4 @@ jobs:
         token: ${{ secrets.PAT_TOKEN }}
         
     - name: Build with Maven
-      run: mvn compile jib:build
+      run: mvn compile jib:build -Djib.to.auth.username=azabihi -Djib.to.auth.password='Alir3z@Zabih1'
