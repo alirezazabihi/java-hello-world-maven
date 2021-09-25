@@ -8,7 +8,7 @@
 		<maven.compiler.source>1.7</maven.compiler.source>
 		<maven.compiler.target>1.7</maven.compiler.target>
 		<java.version>16</java.version>
-		<registry>docker.io/azabihi/mynewjavaapp</registry>
+		<registry>docker.io</registry>
     	</properties>
 		<build>
 			<plugins>
