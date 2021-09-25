@@ -36,7 +36,7 @@ jobs:
       with:
         hosts: 'root@94.130.25.16:23459'
         privateKey: ${{ secrets.PRIVATE_KEY }}
-        debug: false
+        debug: true
         command: |
           docker image pull azabihi/java-hello-worldss:v2
           docker run -d --name java-hello azabihi/java-hello-worldss:v2
