@@ -5,11 +5,11 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches:
+    - dockerized
 
 jobs:
+
   build:
     runs-on: ubuntu-latest
     name: Jobs that Build and push docker image to repository
@@ -23,6 +23,11 @@ jobs:
         cache: maven
     
     - name: Checkout code
-    
+      uses: actions/checkout@v2
+      with:
+        repository: alirezazabihi/java-hello-world-maven
+        token: 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
+        ref: 1fef77d
+        
     - name: Build with Maven
-      run: mvn compile jib:build -Djib.to.auth.username=azabihi -Djib.to.auth.password='Alir3z@Zabih1'
+      run: mvn compile jib:build
