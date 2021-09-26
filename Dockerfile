@@ -1,4 +1,4 @@
 FROM adoptopenjdk:16-jre
-ADD target/java-docker-helloworld.jar java-docker-helloworld.jar
-ENTRYPOINT ["java", "-jar", "java-docker-helloworld.jar"]
+ADD target/HelloWorld:1.0-SNAPSHOT HelloWorld:1.0-SNAPSHOT
+ENTRYPOINT ["java", "-jar", "HelloWorld:1.0-SNAPSHOT"]
 EXPOSE 5050
