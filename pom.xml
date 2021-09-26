@@ -11,9 +11,7 @@
 		<registry>docker.io</registry>
     	</properties>
 		<build>
-			<build>
-				<filename>java-docker-helloworld</filename>
-			</build>
+			<filename>java-docker-helloworld</filename>			
 			<plugins>
 				<plugin>
 					<groupId>com.google.cloud.tools</groupId>
